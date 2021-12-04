@@ -1,13 +1,12 @@
 
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
-import { createAppAuth } from "@octokit/auth-app";
 
 let HttpRequest = new XMLHttpRequest()
 
 btnSearch.addEventListener("click", async function(e){
     e.preventDefault();
     
-    const octokit = new Octokit({ auth: `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` })
+    const octokit = new Octokit({ auth: `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` })
 
     let query = document.getElementById("searchInput").value 
     console.log(query)
