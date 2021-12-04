@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/cac7eabb61.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+        <header class="container">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">perfil</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projetos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">experiência</a>
+                </li>
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">repositorio github</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">conteudo</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search repository" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" id="btnSearch">Search</button>
+              </form>
+            </div>
+          </nav>
+
+        </header>
+
+        <main class="container">
+
+
+          <div class="row" id="pesquisa">
+                
+          </div>
+
+          <div class="row" id="perfil">
+              
+          </div>
+
+            <div class="row" id="projetos">
+
+                <div class="row">
+                    <h2 class="col-12 col-md-6">Projetos</h2>
+                    
+                    <div class="col-12 col-md-6 dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categoria: Todos
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Web sites</a>
+                        <a class="dropdown-item" href="#">Arte grafica</a>
+                        <a class="dropdown-item" href="#">Podcast</a>
+                      </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row cards">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imgs/chaleHotel.PNG" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="card-text negrito">Projeto chale Hotel - 2020</p>
+                        </div>
+                    </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/museu.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <p class="card-text negrito">Projeto Museu Nacional - 2020</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="IMGS/noticiasDaCidade.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <p class="card-text negrito">Projeto Noticias da cidade - 2020</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/paralax.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <p class="card-text negrito">Projeto Paralax - 2020</p>
+                    </div>
+                  </div>
+
+                </div>
+
+            </div>
+
+            <div class="experiencias">
+
+              <h2>Experiência</h2>
+
+              <div class="row experiencia">
+
+                <div class="col-2">
+                  <img src="imgs/enotas.png" alt="">
+                </div>
+                
+                <div class="col-10">
+                  <h3>Desenvolvedor Junior II</h3>
+                  <p>Ajudo a contruir crawlers, desenvolver novas funcionalidades e correção de bugs.</p>
+                  <p>Período: nov. 2020 - até o momento</p>
+                </div>
+                
+              </div>
+
+              <div class="row experiencia">
+
+                <div class="col-2">
+                  <img src="imgs/fase2.webp" alt="">
+                </div>
+                
+                <div class="col-10">
+                  <h3>Estagiario de Desenvolvimento de sofware</h3>
+                  <p>Manutenção e desenvolvimento de software e funcionalidades associados a aparelhos de raio x, voltados para segurança e área médica. Trabalhou com C#, mas já desenvolveu atividades em Shell Script básico. Experiência com Git como sistema de controle de versionamento.</p>
+                  <p>Período: jan. de 2019 – jan. de 2020</p>
+                </div>
+                
+              </div>
+
+              <div class="row experiencia">
+
+                <div class="col-2">
+                  <img src="imgs/cefet.jfif" alt="">
+                </div>
+                
+                <div class="col-10">
+                  <h3>Bolsista de Iniciação Científica</h3>
+                  <p>Colaborei com o desenvolvimento de um aplicativo de ensino de programação. Aplicativo é feito em Ionic. Durante o desenvolvimento tenho aprendido o básico de Ionic com angular e desenvolvimento back-end em java.</p>
+                  <p>Período: mar. de 2020 – nov. de 2020</p>
+                </div>
+                
+              </div>
+
+            </div>
+
+            <div id="Repositorios-github">
+              
+              <h2>Repositórios GitHub</h2>
+
+              <div class="row" id="meusRepositorios">
+
+              </div>
+
+            </div>
+            
+            <div class="row">
+              <h2>Recomendação de Conteúdo</h2>
+
+              <div class="col-12 col-md-4">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/DYz3A9DT-Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><span class="negrito">Vídeo:</span> O que um Sênior sabe, que um Pleno não sabe e um Júnior menos ainda</p>
+                <p><span class="negrito">Director:</span> Filipe Deschamps <span class="negrito">Estreia:</span> 2019</p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/9w3o9NHXqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><span class="negrito">Vídeo:</span> CLEAN CODE #1: Introdução</p>
+                <p><span class="negrito">Director:</span> Filipe Deschamps <span class="negrito">Estreia:</span> 2015</p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/6Czd1Yetaac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><span class="negrito">Vídeo:</span> Entendendo GIT | (não é um tutorial!)</p>
+                <p><span class="negrito">Director:</span> Lorem ipsum dolor sit amet. <span class="negrito">Estreia:</span> 2020</p>
+              </div>
+
+              
+            </div>
+            <div id="carregarMaisRecomedações">
+              <button type="button" class="btn btn-secondary">+ carregar mais recomendações</button>
+            </div>
+        </main>
+
+        <footer class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-10">
+              <p class="text-center">Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <span class="negrito">Icei PUC Minas</span></p>
+            </div>
+            <div class="col-12 col-md-2">
+              <img src="imgs/logo_pucminas.png" alt="">
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <script src="js/script.js" type="module"></script>
+    </body>
+</html>

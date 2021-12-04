@@ -1,0 +1,113 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin: 40px;
+}
+/*Barra de Navegação - Inicio*/
+form{
+    display: flex;
+    margin-left: auto;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+}
+
+/*Barra de Navegação - Fim*/
+
+/*Perfil - Inicio*/
+#perfil div img{
+    width: 100%;
+}
+
+#textos-objetivos{
+    margin: 20px;
+    margin-bottom: 15%;
+}
+
+.negrito{
+    font-weight: bold;  
+}
+
+.redesSociais{
+    margin: 20px;
+    display: inline-block;
+}
+
+.redesSociais i {
+    font-size: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+}
+/*Perfil - FIM*/
+
+/*Projetos - Inicio*/
+.dropdown{
+    display: flex;
+}
+.dropdown button{
+        
+    margin-left: auto;
+}
+
+#projetos{
+    padding: 20px;
+}
+
+.card{
+    padding: 10px;
+    margin: 10px;
+}
+/*Projetos - Fim*/
+
+/*Experiencias - Inicio*/
+.experiencia div img{
+    width: 100%;
+}
+.experiencias h2{
+    padding: 20px;
+}
+/*Experiencias - Fim*/
+
+/*Repositorios gitHub - Inicio*/
+
+#Repositorios-github{
+    background-color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Repositorios-github h2{
+    padding: 20px;
+}
+
+.Repositorio-card{
+    padding: 20px;
+}
+.linkDoRepositorio {
+    text-decoration: none;
+    color: black;
+}
+
+/*Repositorios gitHub fim*/
+
+/*Recomendações - Inicio*/
+#carregarMaisRecomedações{
+    display: flex;
+}
+.btn-secondary{
+    margin-left: auto;
+}
+/*Recomendações - Fim*/
+
+/*Footer - Inicio*/
+footer{
+    background-color: gray;
+}
+/*Footer - Fim*/
