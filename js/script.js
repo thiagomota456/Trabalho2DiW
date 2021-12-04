@@ -1,29 +1,27 @@
-
-import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
-
 let HttpRequest = new XMLHttpRequest()
 
 btnSearch.addEventListener("click", async function(e){
     e.preventDefault();
     
-    const octokit = new Octokit({ auth: `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` })
+    HttpRequest.onload = function(){
 
-    let query = document.getElementById("searchInput").value 
-    //console.log(query)
+        let data = JSON.parse(this.responseText)
+        console.log(data)
 
-    const response1 = await octokit.request('GET /search/repositories', {
-        q: query
-    });
+        let pesquisa = "";
+        for(let i = 0; i < data.items.length; i++){
+            pesquisa += `<a href="${data.items[i].html_url}" style="font-weight: bold;">${data.items[i].full_name}</a><br>
+                         <p>${data.items[i].description}</p><br><br>`
+        }
 
-    console.log(response1)
-
-    let pesquisa = "";
-    for(let i = 0; i < response1.data.items.length; i++){
-        pesquisa += `<a href="${response1.data.items[i].html_url}">${response1.data.items[i].full_name}</a><br>
-                    <p>${response1.data.items[i].description}</p><br><br>`
+        document.getElementById("pesquisa").innerHTML = pesquisa;
     }
 
-    document.getElementById("pesquisa").innerHTML = pesquisa;
+    let query = document.getElementById("searchInput").value
+
+    HttpRequest.open('GET', 'https://api.github.com/search/repositories?q=' + query + '+in:repos');
+    HttpRequest.send();
+    
 
 })
 
