@@ -9,7 +9,7 @@ btnSearch.addEventListener("click", async function(e){
     const octokit = new Octokit({ auth: `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` })
 
     let query = document.getElementById("searchInput").value 
-    console.log(query)
+    //console.log(query)
 
     const response1 = await octokit.request('GET /search/repositories', {
         q: query
@@ -69,7 +69,7 @@ function carregaMeusRepositorios(){
     HttpRequest.onload = function(){
 
         let data = JSON.parse(this.responseText)
-        console.log(data)
+        //console.log(data)
 
         let CardRepositoryString = ""
         for(let i = 0; i < data.length; i++){
